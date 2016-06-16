@@ -13,8 +13,8 @@ echo operador:password | chpasswd
 adduser operador sudo
 mkdir /home/respaldo
 mkdir /home/respaldo/.ssh
-cp /vagrant/provision/id_rsa /home/respaldo/.ssh
-#sudo chmod 600 /home/respaldo/.ssh/id_rsa
+cp /vagrant/provision/known_hosts /home/respaldo/.ssh/known_hosts
+chown -R respaldo /home/respaldo/.ssh/known_hosts
 
 # Tunel para SSH
 if ! grep -q "GatewayPorts yes" /etc/ssh/ssh_config 
