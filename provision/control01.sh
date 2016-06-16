@@ -14,7 +14,7 @@ adduser operador sudo
 mkdir /home/respaldo
 mkdir /home/respaldo/.ssh
 cp /vagrant/provision/id_rsa /home/respaldo/.ssh
-sudo chmod 600 /home/respaldo/.ssh/id_rsa
+#sudo chmod 600 /home/respaldo/.ssh/id_rsa
 
 # Tunel para SSH
 if ! grep -q "GatewayPorts yes" /etc/ssh/ssh_config 
