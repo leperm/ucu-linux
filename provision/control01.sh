@@ -13,6 +13,7 @@ echo operador:password | chpasswd
 adduser operador sudo
 mkdir /home/respaldo
 mkdir /home/respaldo/.ssh
+cp /vagrant/provision/id_rsa /home/respaldo/.ssh
 cp /vagrant/provision/known_hosts /home/respaldo/.ssh/known_hosts
 chown -R respaldo /home/respaldo/.ssh/known_hosts
 
